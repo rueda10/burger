@@ -4,6 +4,7 @@ var burger = require("../models/burger.js");
 var router = express.Router();
 
 router.get("/", function(req, res) {
+  // get request to '/' renders to selected entry to index.handlebars
   burger.selectAll(function(data) {
     var hbsObject = {
       burgers: data
@@ -13,6 +14,7 @@ router.get("/", function(req, res) {
 });
 
 router.post("/", function(req, res) {
+  // post request to '/' inserts entry to table and redirects to '/'
   burger.insertOne([
     "burger_name"
   ], [
@@ -23,6 +25,7 @@ router.post("/", function(req, res) {
 });
 
 router.put("/:id", function(req, res) {
+  // put request to '/:id' updates the devoured entry for the id
   var condition = "id = " + req.params.id;
 
   burger.updateOne({
