@@ -12,7 +12,7 @@
 /* FORM */
 .burger-form {
   text-align: center;
-  width: 500px;
+  width: 380px;
   margin: 0 auto;
   border: thin solid black;
   padding-bottom: 15px;
@@ -44,7 +44,7 @@ ul {
   padding: 20px 10px;
   list-style-type: none;
   margin: 0px 10px;
-  min-width: 350px;
+  min-width: 330px;
   min-height: 150px;
 }
 
@@ -60,6 +60,6 @@ li form button {
 .section-label {
   text-align: center;
   margin: 0px 10px;
-  min-width: 350px;
+  min-width: 330px;
   padding: 0px 20px;
 }
